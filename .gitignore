@@ -1,0 +1,5 @@
+# Executable.
+/gtkgo
+
+# Created by IDE's.
+/src/*.o
