@@ -1,0 +1,12 @@
+Author:
+
+	Norbert de Jonge
+
+Contributors (alphabetical by last name):
+
+	Emmanuel Dumas
+		> Helped with the Makefile. (Used with v0.0.2 and v0.0.3.)
+	Joris van Gasteren
+		> Helped with mpg123. (Used with v0.0.5 - v0.0.10.)
+	Petter Reinholdtsen
+		> Helped with automake. (Used with v0.0.4 - v0.0.8.)

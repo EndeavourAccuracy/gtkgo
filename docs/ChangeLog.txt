@@ -1,0 +1,91 @@
+v0.0.12 (November 19, 2022)
+------------------------------
+* Minor Makefile fix.
+
+v0.0.11 (September 1, 2016)
+------------------------------
+A new release, more than 17 years after the previous version!
++ Added another skin ("classic").
++ Added an optional fullscreen mode.
++ In the largest windowed mode, allowing manual resizing of the board while keeping aspect ratio 1:1. Also allowing manual resizing of the help and Internet windows.
++ Internet: in addition to NNGS servers, IGS servers can now be used.
++ Internet: an invitation window will show up for accepting or declining matches.
++ Showing the point size on a splash window, if the size is not 30 or fullscreen (0).
++ Displays an error if a player is trying to self-capture or use a non-free point.
+- No longer using Imlib 1.9 and GNOME 1.0.
+* Migrated from GTK+ 1.2 to GTK+ 3.18.
+* Audio playback with GStreamer 1.8 instead of mpg123 forks, and using OGGs instead of MP3s.
+* Internet: changed the default server from "nngs.cosmic.org" to "igs.joyjoy.net".
+* Back to using a simple Makefile, without autoconf/automake.
+* Code improvements.[1]
+[1] Added more comments. Renamed and moved variables, functions, files and directories. (This includes drastic changes, such as renaming SaveSgf.c to SaveDialog.c, and then Save.c to SaveSGF.c. And renaming ChangePixmap.c to ChangePoint.c, and then Change.c to ChangePixmap.c.) Proper use of signals and callbacks. Removed the wide "CYS format" of main.h. Removed duplicate code by creating ButtonTop(), CreateButtonBox(), and ChangeImageX(). Using cairo_paint() for the skins. The skins list is now always alphabetically sorted. Checking if images exist before loading them. Modified the way incoming server data is being parsed.
+
+v0.0.10 (May 17, 1999)
+------------------------------
++ Added some script commands.
++ Added another script.
++ Dead stones can now be removed.
++ Real time (correct) scoring.
+* Better way of selecting skins.
+* Graphical improvements.
+
+v0.0.9 (May 6, 1999)
+------------------------------
++ Added optional Gnome support.
++ Added another skin.
+* Code improvements.
+* Bug fixes.
+
+v0.0.8 (April 6, 1999)
+------------------------------
++ Added time limit.
++ Added more documentation.
+* Graphical improvements.
+* Code improvements.
+
+v0.0.7 (March 15, 1999)
+------------------------------
++ Internet: added basic NNGS support.
+* Minor graphical improvements.
+
+v0.0.6 (February 23, 1999)
+------------------------------
++ Two local humans can now play against each other.
++ Added another skin.
+* No more messages to the console.
+* Saving now optional.
+* Changing of players looks better.
+
+v0.0.5 (January 27, 1999)
+------------------------------
++ Added sound support (using mpg123).
++ Added handicaps (as an option).
+* One minor save bug fixed.
+
+v0.0.4 (January 26, 1999)
+------------------------------
++ Added some script commands (and options).
+* Makefile now autoconf/automake.
+* Computer versus computer now visible.
+* Minor bug fixes.
+
+v0.0.3 (December 23, 1998)
+------------------------------
++ Added SGF FF[4] game saving.
++ Added computer script support.
+* Skins now in PNG format.
+* Minor bug fixes.
+
+v0.0.2 (December 9, 1998)
+------------------------------
++ Added skin support.
++ Added an undo option.
++ Added some documentation.
+- Removed the different difficulties.
+* Real fast graphics and auto resize (GDK Imlib).
+* Latest (computer) move easier to recognize.
+* Made the source code easier to handle/read.
+
+v0.0.1 (November 29, 1998)
+------------------------------
++ Initial release.
